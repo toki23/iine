@@ -7,12 +7,11 @@
         "plugin:react/recommended",
         "standard-with-typescript",
         "plugin:react-hooks/recommended"
-
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-            "jsx": true,
-            "project":"./tsconfig.json",
+        "jsx": true,
+        "project": "./tsconfig.json",
         "ecmaVersion": "latest"
     },
     "plugins": [
@@ -22,6 +21,7 @@
     ],
     "rules": {
         "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn"
+        "react-hooks/exhaustive-deps": "warn",
+        "react/react-in-jsx-scope": "off"
     }
 }
